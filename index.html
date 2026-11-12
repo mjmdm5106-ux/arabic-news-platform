@@ -2,34 +2,122 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مشروعي الأول</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #101827;
-      color: white;
-      padding: 50px 20px;
-    }
-    h1 {
-      color: #38bdf8;
-    }
-    button {
-      padding: 12px 24px;
-      border: none;
-      border-radius: 10px;
-      background: #38bdf8;
-      cursor: pointer;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نبض الأخبار</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f8;
+  color: #182333;
+}
+header {
+  background: #10243b;
+  color: white;
+  padding: 22px 16px;
+  text-align: center;
+}
+header h1 { margin: 0; color: #fff; }
+header p { margin-bottom: 0; color: #cbd5e1; }
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #193653;
+  padding: 14px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav a:hover { color: #f5bd45; }
+.breaking {
+  background: #bd2635;
+  color: white;
+  padding: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+.container {
+  max-width: 950px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+h2 { color: #10243b; }
+.news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 18px;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 12px #00000012;
+}
+.card h3 { color: #173b60; }
+.card p { line-height: 1.8; color: #536273; }
+.tag { color: #bd2635; font-size: 13px; }
+footer {
+  background: #10243b;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  margin-top: 40px;
+}
+</style>
 </head>
 <body>
-  <h1>مرحباً بك في مشروعي الأول!</h1>
-  <p>أنا أتعلم البرمجة باستخدام GitHub.</p>
-  <button onclick="alert('أهلاً بك!')">
-    اضغط هنا
-  </button>
+
+<header>
+  <h1>نبض الأخبار</h1>
+  <p>نضعك في قلب الحدث</p>
+</header>
+
+<nav>
+  <a href="#">الرئيسية</a>
+  <a href="#politics">سياسة</a>
+  <a href="#economy">اقتصاد</a>
+  <a href="#technology">تكنولوجيا</a>
+</nav>
+
+<div class="breaking">
+  🔴 نشرة الأخبار | تابع أهم الأحداث والتطورات
+</div>
+
+<main class="container">
+  <h2>أحدث الأخبار</h2>
+
+  <section class="news">
+    <article class="card" id="politics">
+      <span class="tag">سياسة</span>
+      <h3>تطورات المشهد السياسي</h3>
+      <p>تابع أبرز التطورات السياسية والأحداث الدولية من حول العالم.</p>
+    </article>
+
+    <article class="card" id="economy">
+      <span class="tag">اقتصاد</span>
+      <h3>أخبار الاقتصاد والأسواق</h3>
+      <p>تعرف على مستجدات الأسواق والاقتصاد والاستثمار.</p>
+    </article>
+
+    <article class="card" id="technology">
+      <span class="tag">تكنولوجيا</span>
+      <h3>عالم الذكاء الاصطناعي</h3>
+      <p>اكتشف أحدث الابتكارات والتقنيات الرقمية.</p>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 نبض الأخبار - جميع الحقوق محفوظة</p>
+  <p>موقع تجريبي للتعلم والتطوير</p>
+</footer>
+
 </body>
-</html>
+  </html>
+  
