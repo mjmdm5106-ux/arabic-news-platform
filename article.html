@@ -6,49 +6,84 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>تفاصيل الخبر - نبض الأخبار</title>
 <style>
-body{margin:0;font-family:Arial;background:#f2f4f7;color:#182333}
-header{background:#10243b;color:white;padding:22px;text-align:center}
-main{max-width:800px;margin:30px auto;padding:20px;background:white;border-radius:12px}
-.category{color:#c62838;font-weight:bold}
-h2{color:#173b60;line-height:1.7}
-p{line-height:2;font-size:17px}
-a{display:inline-block;background:#173b60;color:white;padding:12px 20px;border-radius:7px;text-decoration:none}
-footer{text-align:center;background:#10243b;color:white;padding:20px;margin-top:40px}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f7;
+  color: #182333;
+}
+header {
+  background: #10243b;
+  color: white;
+  padding: 22px;
+  text-align: center;
+}
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+}
+.category {
+  color: #c62838;
+  font-weight: bold;
+}
+h2 { color: #173b60; line-height: 1.7; }
+p { line-height: 2; font-size: 17px; }
+a {
+  display: inline-block;
+  background: #173b60;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  background: #10243b;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
 </style>
 </head>
 <body>
 
 <header>
-<h1>نبض الأخبار</h1>
-<p>نضعك في قلب الحدث</p>
+  <h1>نبض الأخبار</h1>
+  <p>نضعك في قلب الحدث</p>
 </header>
 
 <main>
-<div class="category" id="category">قسم الأخبار</div>
-<h2 id="title">عنوان الخبر</h2>
-<p>
-أنت الآن تشاهد صفحة خبر مستقلة ضمن موقع نبض الأخبار.
-يمكنك تطوير هذه الصفحة لاحقًا لإضافة نصوص الأخبار
-والصور والمصادر وتاريخ النشر.
-</p>
-<p>
-هذا محتوى تجريبي للتعلم، وليس خبرًا حقيقيًا.
-</p>
-<a href="index.html">العودة إلى الصفحة الرئيسية</a>
+  <div class="category" id="category">قسم الأخبار</div>
+
+  <h2 id="title">عنوان الخبر</h2>
+
+  <p>
+    أنت الآن تشاهد صفحة خبر مستقلة ضمن موقع نبض الأخبار.
+    يمكنك تطوير هذه الصفحة لاحقًا لإضافة نصوص الأخبار
+    والصور والمصادر وتاريخ النشر.
+  </p>
+
+  <p>هذا محتوى تجريبي للتعلم، وليس خبرًا حقيقيًا.</p>
+
+  <a href="index.html">العودة إلى الصفحة الرئيسية</a>
 </main>
 
 <footer>
-© 2026 نبض الأخبار
+  © 2026 نبض الأخبار
 </footer>
 
 <script>
 const params = new URLSearchParams(window.location.search);
+
 document.getElementById("title").textContent =
-params.get("title") || "تفاصيل الخبر";
+  params.get("title") || "تفاصيل الخبر";
+
 document.getElementById("category").textContent =
-params.get("category") || "الأخبار";
+  params.get("category") || "الأخبار";
 </script>
 
 </body>
 </html>
-  
